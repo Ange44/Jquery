@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header>
+    <img id="menu-toggle" src="téléchargement.png">
+</header>
+
+<nav id="side-nav">
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Ange</a></li>
+        <li><a href="#">Boutty</a></li>
+        <li><a href="#">Desire </a></li>
+    </ul>
+
+    <ul>
+        <li><p>LIBRAR</p></li>
+        <li><a href="#">Ange</a></li>
+        <li><a href="#">Boutty</a></li>
+        <li><a href="#">Desire </a></li>
+    </ul>
+
+</nav>
+
+
+
+<script>
+    /*
+    $(document).ready(function() {
+    $("#menu-toggle").click(function() {
+      $("#side-nav").toggle(1000, function() {
+        alert("Bienvenue sur notre site");
+      }); 
+    });
+});*/
+$(document).ready(function() {
+    $("#menu-toggle").click(function() {
+      $("#side-nav").fadeOut(); 
+    });
+});
+</script>
+</body>
+</html>
